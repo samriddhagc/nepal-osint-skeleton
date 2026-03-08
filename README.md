@@ -21,14 +21,14 @@ This is the **open-source skeleton** — a fully functional dashboard framework.
 
 ```
 ┌─────────────────────────────────────────────────┐
-│                   Frontend                       │
+│                   Frontend                      │
 │  React 18 + TypeScript + Vite + Tailwind        │
 │  Blueprint 5 Dark Theme + Zustand + React Query │
-│  Widget-based Dashboard System                   │
+│  Widget-based Dashboard System                  │
 ├─────────────────────────────────────────────────┤
-│                  Nginx Proxy                     │
+│                  Nginx Proxy                    │
 ├─────────────────────────────────────────────────┤
-│                   Backend                        │
+│                   Backend                       │
 │  FastAPI + SQLAlchemy 2.0 Async + Alembic       │
 │  Repository → Service → API Route pattern       │
 │  JWT Auth (consumer/analyst/dev roles)          │
@@ -85,10 +85,10 @@ The skeleton is designed to support AI-powered analyst agents. Here's how the ag
 ┌──────────────────────────────────────────────────────────────────┐
 │                        Local Machine                             │
 │                                                                  │
-│  ┌─────────────┐    ┌──────────────┐    ┌────────────────────┐  │
-│  │  Scheduler   │───▸│  Agent Runner │───▸│  Claude / LLM API  │  │
-│  │  (cron)      │    │  (Python)     │    │  (analysis engine) │  │
-│  └─────────────┘    └──────┬───────┘    └────────────────────┘  │
+│  ┌─────────────┐    ┌──────────────┐    ┌────────────────────┐   │
+│  │  Scheduler   │───▸│  Agent Runner │───▸│  Claude / LLM API│   │
+│  │  (cron)      │    │  (Python)     │    │  (analysis engine│   │
+│  └─────────────┘    └──────┬───────┘    └────────────────────┘   │
 │                            │                                     │
 │                     GET data from server                         │
 │                     POST results to server                       │
@@ -97,16 +97,16 @@ The skeleton is designed to support AI-powered analyst agents. Here's how the ag
 │                        Server                                    │
 │                            │                                     │
 │  ┌─────────────────────────▼──────────────────────────────────┐  │
-│  │                    FastAPI Backend                          │  │
+│  │                    FastAPI Backend                         │  │
 │  │                                                            │  │
 │  │  GET  /api/v1/stories/export    → Raw stories for analysis │  │
 │  │  GET  /api/v1/twitter/export    → Raw tweets for analysis  │  │
 │  │  POST /api/v1/briefs/ingest     → Store analyst brief      │  │
 │  │  POST /api/v1/promises/ingest   → Update promise statuses  │  │
 │  │                                                            │  │
-│  │  ┌──────────┐  ┌───────┐  ┌──────────────────────────┐    │  │
-│  │  │PostgreSQL│  │ Redis │  │ APScheduler (scrapers)   │    │  │
-│  │  └──────────┘  └───────┘  └──────────────────────────┘    │  │
+│  │  ┌──────────┐  ┌───────┐  ┌──────────────────────────┐     │  │
+│  │  │PostgreSQL│  │ Redis │  │ APScheduler (scrapers)   │     │  │
+│  │  └──────────┘  └───────┘  └──────────────────────────┘     │  │
 │  └────────────────────────────────────────────────────────────┘  │
 │                                                                  │
 │  ┌────────────────────────────────────────────────────────────┐  │
