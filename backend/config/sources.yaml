@@ -1,0 +1,811 @@
+sources:
+- id: tkp
+  name: The Kathmandu Post
+  url: https://kathmandupost.com/rss
+  category: news
+  language: en
+  priority: 1
+  poll_interval_mins: 15
+- id: himalayan
+  name: The Himalayan Times
+  url: https://www.thehimalayantimes.com/
+  category: news
+  language: en
+  priority: 1
+  poll_interval_mins: 15
+  scrape_method: html
+- id: republica
+  name: My Republica
+  url: https://myrepublica.nagariknetwork.com/
+  category: news
+  language: en
+  priority: 1
+  poll_interval_mins: 15
+  scrape_method: html
+- id: onlinekhabar_en
+  name: OnlineKhabar (English)
+  url: https://english.onlinekhabar.com/feed
+  category: news
+  language: en
+  priority: 1
+  poll_interval_mins: 15
+- id: khabarhub
+  name: Khabarhub
+  url: https://english.khabarhub.com/feed/
+  category: news
+  language: en
+  priority: 2
+  poll_interval_mins: 15
+- id: onlinekhabar_ne
+  name: OnlineKhabar (Nepali)
+  url: https://www.onlinekhabar.com/feed
+  category: news
+  language: ne
+  priority: 1
+  poll_interval_mins: 15
+- id: setopati
+  name: Setopati
+  url: https://www.setopati.com/feed
+  category: news
+  language: ne
+  priority: 1
+  poll_interval_mins: 15
+- id: ekantipur
+  name: eKantipur
+  url: https://ekantipur.com/
+  category: news
+  language: ne
+  priority: 1
+  poll_interval_mins: 15
+  scrape_method: html
+- id: ratopati
+  name: Ratopati
+  url: https://ratopati.com/
+  category: news
+  language: ne
+  priority: 1
+  poll_interval_mins: 15
+  scrape_method: html
+- id: nagariknews
+  name: Nagarik News
+  url: https://nagariknews.nagariknetwork.com/feed
+  category: news
+  language: ne
+  priority: 1
+  poll_interval_mins: 15
+- id: annapurnapost
+  name: Annapurna Post
+  url: https://annapurnapost.com/rss
+  category: news
+  language: ne
+  priority: 1
+  poll_interval_mins: 15
+- id: bbc_nepal
+  name: BBC Nepali
+  url: https://feeds.bbci.co.uk/nepali/rss.xml
+  category: news
+  language: ne
+  priority: 1
+  poll_interval_mins: 15
+- id: bbc_south_asia
+  name: BBC South Asia
+  url: https://feeds.bbci.co.uk/news/world/asia/rss.xml
+  category: news
+  language: en
+  priority: 1
+  poll_interval_mins: 15
+- id: risingnepaldaily
+  name: The Rising Nepal
+  url: https://risingnepaldaily.com/rss
+  category: news
+  language: en
+  priority: 2
+  poll_interval_mins: 30
+- id: nepalitimes
+  name: Nepali Times
+  url: https://www.nepalitimes.com/
+  category: news
+  language: en
+  priority: 2
+  poll_interval_mins: 30
+  scrape_method: html
+- id: spotlight
+  name: Spotlight Nepal
+  url: https://www.spotlightnepal.com/feed/
+  category: news
+  language: en
+  priority: 3
+  poll_interval_mins: 60
+- id: gorkhapatra
+  name: Gorkhapatra
+  url: https://gorkhapatraonline.com/rss
+  category: news
+  language: ne
+  priority: 2
+  poll_interval_mins: 30
+- id: nayapatrika
+  name: Naya Patrika
+  url: https://www.nayapatrikadaily.com/feed
+  category: news
+  language: ne
+  priority: 2
+  poll_interval_mins: 30
+  is_active: false  # RSS feed removed by upstream
+- id: khabarhub_ne
+  name: Khabarhub (Nepali)
+  url: https://khabarhub.com/feed/
+  category: news
+  language: ne
+  priority: 2
+  poll_interval_mins: 15
+- id: himalpress
+  name: Himal Press
+  url: https://www.himalpress.com/feed/
+  category: news
+  language: ne
+  priority: 2
+  poll_interval_mins: 30
+- id: pahilopost
+  name: Pahilo Post
+  url: https://pahilopost.com/feed
+  category: news
+  language: ne
+  priority: 2
+  poll_interval_mins: 15
+- id: kantipurtv
+  name: Kantipur TV
+  url: https://www.kantipurtv.com/
+  category: news
+  language: ne
+  priority: 2
+  poll_interval_mins: 30
+  scrape_method: html
+- id: ap1tv
+  name: AP1 TV
+  url: https://ap1hdtv.com/feed/
+  category: news
+  language: ne
+  priority: 2
+  poll_interval_mins: 30
+- id: imagetv
+  name: Image Channel
+  url: https://www.imagekhabar.com/feed
+  category: news
+  language: ne
+  priority: 2
+  poll_interval_mins: 30
+- id: sharesansar
+  name: Share Sansar
+  url: https://www.sharesansar.com/rss
+  category: economic
+  language: ne
+  priority: 2
+  poll_interval_mins: 15
+  is_active: false  # RSS feed removed by upstream
+- id: merolagani
+  name: Mero Lagani
+  url: https://merolagani.com/rss.aspx
+  category: economic
+  language: ne
+  priority: 2
+  poll_interval_mins: 15
+- id: newbusinessage
+  name: New Business Age
+  url: https://www.newbusinessage.com/feed
+  category: economic
+  language: en
+  priority: 3
+  poll_interval_mins: 60
+  is_active: false  # RSS feed removed by upstream
+- id: pokharahotline
+  name: Pokhara Hotline
+  url: https://pokharahotline.com/feed/
+  category: news
+  language: ne
+  priority: 4
+  poll_interval_mins: 60
+- id: koshi_ratopati
+  name: Ratopati Koshi
+  url: https://koshi.ratopati.com/
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+  scrape_method: html
+- id: koshi_ekantipur
+  name: eKantipur Koshi
+  url: https://ekantipur.com/pradesh-1
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+  scrape_method: html
+- id: koshi_onlinekhabar
+  name: OnlineKhabar Koshi
+  url: https://www.onlinekhabar.com/content/province/koshi/feed
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+- id: biratnagar_ob
+  name: Our Biratnagar
+  url: https://ourbiratnagar.net/feed/
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+- id: udghosh_daily
+  name: Udghosh Daily
+  url: https://udghoshdaily.com/feed/
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+  is_active: false  # Site down / RSS removed
+- id: madhesh_ratopati
+  name: Ratopati Madhesh
+  url: https://madhesh.ratopati.com/
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+  scrape_method: html
+- id: madhesh_ekantipur
+  name: eKantipur Madhesh
+  url: https://ekantipur.com/pradesh-2
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+  scrape_method: html
+- id: madhesh_onlinekhabar
+  name: OnlineKhabar Madhesh
+  url: https://www.onlinekhabar.com/content/province/madhesh/feed
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+- id: janakpur_today
+  name: Janakpur Today
+  url: https://ejanakpurtoday.com/feed/
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+- id: enewsbureau
+  name: eNewsbureau Madhesh
+  url: https://enewsbureau.com/feed/
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+  is_active: false  # Site down / RSS removed
+- id: bagmati_ratopati
+  name: Ratopati Bagmati
+  url: https://bagmati.ratopati.com/
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+  scrape_method: html
+- id: bagmati_ekantipur
+  name: eKantipur Bagmati
+  url: https://ekantipur.com/pradesh-3
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+  scrape_method: html
+- id: bagmati_onlinekhabar
+  name: OnlineKhabar Bagmati
+  url: https://www.onlinekhabar.com/content/province/bagmati/feed
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+- id: himalpress_bagmati
+  name: HimalPress Bagmati
+  url: https://en.himalpress.com/category/province/province-3/feed/
+  category: news
+  language: en
+  priority: 3
+  poll_interval_mins: 60
+- id: gandaki_ratopati
+  name: Ratopati Gandaki
+  url: https://gandaki.ratopati.com/province/4
+  category: news
+  language: ne
+  priority: 2
+  poll_interval_mins: 30
+  scrape_method: html
+- id: gandaki_ekantipur
+  name: eKantipur Gandaki
+  url: https://ekantipur.com/pradesh-4
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+  scrape_method: html
+- id: gandaki_onlinekhabar
+  name: OnlineKhabar Gandaki
+  url: https://www.onlinekhabar.com/content/province/gandaki/feed
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+- id: gandaknews
+  name: Gandak News
+  url: https://www.gandaknews.com/feed/
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+- id: ganthan_news
+  name: Ganthan News
+  url: https://ganthan.com/feed/
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+  is_active: false  # Site down / RSS removed
+- id: lumbini_ratopati
+  name: Ratopati Lumbini
+  url: https://lumbini.ratopati.com/
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+  scrape_method: html
+- id: lumbini_ekantipur
+  name: eKantipur Lumbini
+  url: https://ekantipur.com/pradesh-5
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+  scrape_method: html
+- id: lumbini_onlinekhabar
+  name: OnlineKhabar Lumbini
+  url: https://www.onlinekhabar.com/content/province/lumbini/feed
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+- id: lumbini_online
+  name: Lumbini Online
+  url: https://www.lumbinionline.com/feed/
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+- id: karnali_ratopati
+  name: Ratopati Karnali
+  url: https://karnali.ratopati.com/
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+  scrape_method: html
+- id: karnali_ekantipur
+  name: eKantipur Karnali
+  url: https://ekantipur.com/pradesh-6
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+  scrape_method: html
+- id: karnali_onlinekhabar
+  name: OnlineKhabar Karnali
+  url: https://www.onlinekhabar.com/content/province/karnali/feed
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+- id: karnali_tkp
+  name: Kathmandu Post Karnali
+  url: https://kathmandupost.com/karnali-province/feed
+  category: news
+  language: en
+  priority: 3
+  poll_interval_mins: 60
+  is_active: false  # TKP removed province RSS feeds
+- id: karnali_mission
+  name: Karnali Mission
+  url: https://karnalimission.com/feed/
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+- id: sudurpashchim_ratopati
+  name: Ratopati Sudurpashchim
+  url: https://sudurpashchim.ratopati.com/
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+  scrape_method: html
+- id: sudurpashchim_ekantipur
+  name: eKantipur Sudurpashchim
+  url: https://ekantipur.com/pradesh-7
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+  scrape_method: html
+- id: sudurpashchim_onlinekhabar
+  name: OnlineKhabar Sudurpashchim
+  url: https://www.onlinekhabar.com/content/province/sudurpashchim/feed
+  category: news
+  language: ne
+  priority: 3
+  poll_interval_mins: 60
+- id: sudurpashchim_tkp
+  name: Kathmandu Post Sudurpashchim
+  url: https://kathmandupost.com/sudurpaschim-province/feed
+  category: news
+  language: en
+  priority: 3
+  poll_interval_mins: 60
+  is_active: false  # TKP removed province RSS feeds
+twitter_queries:
+- name: Official Nepal Sources
+  query: (from:ECNOfficial OR from:NepaliArmyHQ OR from:BIPADPortal) -is:retweet
+  category: official
+  priority: 1
+  max_results: 10
+  poll_interval_mins: 720
+- name: Nepal Breaking News
+  query: (Nepal) (breaking OR emergency OR urgent) -is:retweet
+  category: news
+  priority: 2
+  max_results: 10
+  poll_interval_mins: 720
+twitter_accounts:
+- username: ECNOfficial
+  name: Election Commission Nepal
+  category: govt
+  priority: 1
+  tier: free
+  type: organization
+  daily_limit: 5
+  description: Elections, voter registration, official results
+  url: https://x.com/ECNOfficial
+- username: NepaliArmyHQ
+  name: Nepal Army Headquarters
+  category: security
+  priority: 1
+  tier: free
+  type: organization
+  daily_limit: 5
+  description: Security operations, disaster response, official statements
+  url: https://x.com/NepaliArmyHQ
+- username: BIPADPortal
+  name: BIPAD Portal
+  category: disaster
+  priority: 1
+  tier: free
+  type: organization
+  daily_limit: 5
+  description: National disaster information portal
+- username: thapagk
+  name: GK Thapa
+  category: journalist
+  priority: 1
+  tier: free
+  type: individual
+  daily_limit: 2
+  description: Journalist covering Nepal news
+  url: https://x.com/thapagk
+- username: hamrorabi
+  name: Hamro Rabi
+  category: news
+  priority: 1
+  tier: free
+  type: individual
+  daily_limit: 2
+  description: Nepal news and updates
+  url: https://x.com/hamrorabi
+- username: kathmandupost
+  name: The Kathmandu Post
+  category: news
+  priority: 2
+  tier: basic
+  type: organization
+- username: OnlineKhabar
+  name: Online Khabar
+  category: news
+  priority: 2
+  tier: basic
+  type: organization
+- username: BBCNepali
+  name: BBC Nepali
+  category: international
+  priority: 3
+  tier: pro
+  type: organization
+
+# ==================== Nitter Scraping Config ====================
+nitter_config:
+  instances:
+    - url: https://nitter.poast.org
+      priority: 1
+    - url: https://nitter.privacydev.net
+      priority: 2
+  request_timeout: 30
+  delay_between_requests: 2.0
+
+nitter_accounts:
+  # ── Government & Official ──
+  - username: ECNOfficial
+    name: Election Commission Nepal
+    category: govt
+  - username: NepaliArmyHQ
+    name: Nepal Army Headquarters
+    category: security
+  - username: NDRRMA_Nepal
+    name: NDRRMA Nepal (Disaster)
+    category: disaster
+  - username: NepalPoliceHQ
+    name: Nepal Police HQ
+    category: security
+  - username: MoHA_Nepal
+    name: Ministry of Home Affairs
+    category: govt
+  - username: pmsushilakarki
+    name: Sushila Karki (Interim PM)
+    category: govt
+  - username: KulmanGhising
+    name: Kulman Ghising (Energy Minister)
+    category: govt
+
+  # ── Political Leaders ──
+  - username: kpsharmaoli
+    name: KP Sharma Oli (CPN-UML)
+    category: political
+  - username: cmprachanda
+    name: Pushpa Kamal Dahal (Maoist Centre)
+    category: political
+  - username: SherBDeuba
+    name: Sher Bahadur Deuba (NC)
+    category: political
+  - username: thapagk
+    name: Gagan Thapa (NC President)
+    category: political
+  - username: hamrorabi
+    name: Rabi Lamichhane (RSP)
+    category: political
+  - username: ShahBalen
+    name: Balen Shah (RSP, former Mayor)
+    category: political
+  - username: KTnepal
+    name: Kamal Thapa (RPP)
+    category: political
+  - username: brb1954
+    name: Baburam Bhattarai (Socialist)
+    category: political
+  - username: yogesbhattarai
+    name: Yogesh Bhattarai (CPN-UML)
+    category: political
+  - username: BishnuRimal
+    name: Bishnu Rimal (CPN-UML)
+    category: political
+  - username: RabindraMishra
+    name: Rabindra Mishra (RPP)
+    category: political
+  - username: BinodKChaudhary
+    name: Binod Chaudhary (NC MP)
+    category: political
+  - username: SwarnimWagle
+    name: Swarnim Wagle (RSP Vice-Chair)
+    category: political
+  - username: NPSaudnc
+    name: NP Saud (NC, Former FM)
+    category: political
+  - username: NCPurnaKhadka
+    name: Purna Bahadur Khadka (NC)
+    category: political
+  - username: IshwarPokhrel
+    name: Ishwar Pokhrel (CPN-UML)
+    category: political
+  - username: GokulPBaskota
+    name: Gokul Prasad Baskota (CPN-UML)
+    category: political
+  - username: JSPrabhakar
+    name: Janardan Sharma (Maoist Centre)
+    category: political
+  - username: ram_partha
+    name: Ram Karki (Maoist Centre)
+    category: political
+  - username: sumnima_udas
+    name: Sumnima Udas (RSP)
+    category: political
+  - username: Kabindra99
+    name: Kabindra Burlakoti (RSP)
+    category: political
+  - username: Himalayabiraj
+    name: Biraj Bhakta Shrestha (RSP)
+    category: political
+  - username: RajendraLingden
+    name: Rajendra Lingden (RPP Chairman)
+    category: political
+  - username: DrPrakashChan1
+    name: Prakash Chandra Lohani (RPP)
+    category: political
+  - username: rlgolchha
+    name: Rajlakshmi Golchha (CPN-UML MP)
+    category: political
+  - username: brtdhl
+    name: Bharat Dahal (Commentator)
+    category: political
+  - username: MahabirPun
+    name: Mahabir Pun (Activist)
+    category: political
+  - username: HarkaSampang
+    name: Harka Sampang (Independent)
+    category: political
+
+  # ── Party Official Accounts ──
+  - username: party_swatantra
+    name: Rastriya Swatantra Party (Official)
+    category: political
+  - username: NepaliCongress
+    name: Nepali Congress (Official)
+    category: political
+  - username: CPNUML
+    name: CPN-UML (Official)
+    category: political
+  - username: MaoistCentre
+    name: Maoist Centre (Official)
+    category: political
+  - username: RPPNepal
+    name: RPP (Official)
+    category: political
+
+  # ── Election Live Info ──
+  - username: ratemyneta
+    name: Rate My Neta (Live Election Info)
+    category: political
+
+  # ── News Media ──
+  - username: kathmandupost
+    name: The Kathmandu Post
+    category: news
+  - username: OnlineKhabar
+    name: Online Khabar
+    category: news
+  - username: BBCNepali
+    name: BBC Nepali
+    category: international
+  - username: MyRepublica
+    name: My Republica
+    category: news
+
+  # ── Journalists & Analysts ──
+  - username: sudheerktm
+    name: Sudheer Sharma (Journalist)
+    category: journalist
+  - username: realpbhattarai
+    name: Pradip Bhattarai (Commentator)
+    category: journalist
+  - username: Vijaykumarko
+    name: Vijay Kumar Panday (TV Host)
+    category: journalist
+  - username: kundadixit
+    name: Kunda Dixit (Nepali Times)
+    category: journalist
+  - username: romangautam
+    name: Roman Gautam (Himal Southasian)
+    category: journalist
+  - username: bhadrarukum
+    name: Bhadra Sharma (NYT Nepal)
+    category: journalist
+  - username: kishorenepal
+    name: Kishore Nepal (Writer)
+    category: journalist
+  - username: RameshBhushal
+    name: Ramesh Bhushal (Science Reporter)
+    category: journalist
+  - username: KoshRKoirala
+    name: Kosh R Koirala (Republica Editor)
+    category: journalist
+  - username: NepaliComment
+    name: Dipesh Tripathi (Nepali Comment)
+    category: journalist
+  - username: rabirajbaral
+    name: Rabi Raj Baral (Journalist)
+    category: journalist
+  - username: Cvaanee
+    name: Shivanee Thapa Basnyat (News Editor)
+    category: journalist
+  - username: biswasktm
+    name: Biswas Baral (KTM Post Editor)
+    category: journalist
+  - username: shwetha19S
+    name: Shwetha Srikanthan (Himal Southasian)
+    category: journalist
+
+nitter_hashtags:
+  # ── Existing English ──
+  - tag: kpoli
+    name: Nepal Politics
+    category: political
+  - tag: NepalElection
+    name: Nepal Election 2082
+    category: political
+  - tag: balen
+    name: Balen Shah
+    category: political
+
+  # ── New English ──
+  - tag: NepalFlood
+    name: Nepal Flood
+    category: disaster
+  - tag: NepalDisaster
+    name: Nepal Disaster
+    category: disaster
+  - tag: NepalNews
+    name: Nepal News
+    category: news
+  - tag: Kathmandu
+    name: Kathmandu
+    category: news
+
+  # ── Nepali Language ──
+  - tag: नेपाल
+    name: Nepal (Nepali)
+    category: news
+  - tag: काठमाडौं
+    name: Kathmandu (Nepali)
+    category: news
+  - tag: नेपालनिर्वाचन
+    name: Nepal Election (Nepali)
+    category: political
+  - tag: बाढी
+    name: Flood (Nepali)
+    category: disaster
+  - tag: भूकम्प
+    name: Earthquake (Nepali)
+    category: disaster
+  - tag: पहिरो
+    name: Landslide (Nepali)
+    category: disaster
+  - tag: संसद
+    name: Parliament (Nepali)
+    category: political
+  - tag: नेपालराजनीति
+    name: Nepal Politics (Nepali)
+    category: political
+
+# ==================== Nitter Text Searches ====================
+# Plain text search queries (no # prefix) for broader coverage
+nitter_searches:
+  - query: "RSP Nepal election"
+    name: RSP Election Coverage
+    category: political
+  - query: "UML Nepal election"
+    name: UML Election Coverage
+    category: political
+  - query: "Nepali Congress election"
+    name: NC Election Coverage
+    category: political
+  - query: "Maoist Centre Nepal"
+    name: Maoist Centre Coverage
+    category: political
+  - query: "Nepal election results 2082"
+    name: Nepal Election Results
+    category: political
+  - query: "Nepal vote counting"
+    name: Vote Counting Updates
+    category: political
+  - query: "Balen Shah Jhapa"
+    name: Balen Shah Updates
+    category: political
+  - query: "KP Oli election"
+    name: KP Oli Election
+    category: political
+  - query: "Nepal election violence"
+    name: Election Violence Reports
+    category: security
+  - query: "Nepal booth capturing"
+    name: Booth Capturing Reports
+    category: security

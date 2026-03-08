@@ -1,0 +1,253 @@
+# Nepal OSINT v5 - Relevance Classification Rules
+# Rules-based Nepal relevance filter (no LLM)
+
+# Sources that are automatically Nepal-domestic
+nepal_sources:
+  - kathmandupost
+  - tkp
+  - himalayan
+  - myrepublica
+  - republica
+  - onlinekhabar
+  - setopati
+  - ekantipur
+  - ratopati
+  - nagariknews
+  - annapurnapost
+  - gorkhapatra
+  - risingnepaldaily
+  - nepalitimes
+  - bbcnepali
+  - bbc_nepal
+  - pahilopost
+  - himalpress
+  - khabarhub
+  - sharesansar
+  - merolagani
+  - kantipurtv
+  - ap1tv
+  - imagetv
+
+# Keywords that indicate Nepal relevance (case-insensitive)
+nepal_markers:
+  # Country/Demonym
+  - nepal
+  - nepali
+  - nepalese
+
+  # Capital & Major Cities
+  - kathmandu
+  - pokhara
+  - lalitpur
+  - bhaktapur
+  - patan
+  - biratnagar
+  - birgunj
+  - dharan
+  - hetauda
+  - janakpur
+  - nepalgunj
+  - butwal
+  - dhangadhi
+  - bharatpur
+  - itahari
+
+  # Provinces
+  - bagmati
+  - gandaki
+  - lumbini
+  - karnali
+  - sudurpashchim
+  - madhesh
+  - koshi
+
+  # Districts (major)
+  - sindhupalchok
+  - dolakha
+  - gorkha
+  - rasuwa
+  - nuwakot
+  - kavrepalanchok
+  - makwanpur
+  - chitwan
+  - parsa
+  - bara
+  - rautahat
+  - sarlahi
+  - mahottari
+  - dhanusha
+  - siraha
+  - saptari
+  - sunsari
+  - morang
+  - jhapa
+
+  # Political Figures (current)
+  - prachanda
+  - pushpa kamal dahal
+  - kp sharma oli
+  - kp oli
+  - sher bahadur deuba
+  - balen shah
+  - rabi lamichhane
+  - ram chandra poudel
+
+  # Political Parties
+  - nepali congress
+  - uml
+  - cpn-uml
+  - maoist centre
+  - maoist center
+  - rsp
+  - rastriya swatantra party
+  - rastriya prajatantra
+  - janata samajbadi
+
+  # Government Bodies
+  - parliament of nepal
+  - nepal rastra bank
+  - nrb
+  - election commission nepal
+  - supreme court nepal
+
+  # Security
+  - nepal police
+  - nepal army
+  - armed police force
+  - apf
+
+  # Landmarks/Geographic
+  - mount everest
+  - sagarmatha
+  - annapurna
+  - lumbini
+  - pashupatinath
+  - swayambhunath
+  - boudhanath
+  - himalaya
+
+  # Currency
+  - npr
+  - nepali rupee
+  - nrs
+
+  # Nepali Script (Devanagari markers)
+  - नेपाल
+  - काठमाडौं
+  - प्रचण्ड
+  - ओली
+  - देउवा
+
+# Patterns that exclude content (sports, entertainment, foreign politics)
+exclusion_patterns:
+  # International Cricket (unless Nepal team)
+  - "\\b(ipl|bcci|big bash|cpl|county cricket)\\b"
+  - "\\b(virat kohli|rohit sharma|ms dhoni|sachin tendulkar|bumrah)\\b"
+  - "\\b(ashes|test match|test series|odi series|test cricket)\\b"
+  - "\\b(windies|west indies|scotland cricket|ireland cricket)\\b"
+  - "\\b(england cricket|australia cricket|india cricket|pakistan cricket)\\b"
+  - "\\b(t20 world cup|world t20|icc t20|t20 wc)\\b"
+  - "\\b(t20i|odi|test match|super over)\\b"
+  - "\\b(squad announced|names squad|squad named|squad for)\\b"
+  - "\\b(batting average|bowling figures|century|wicket|stumps)\\b"
+  - "\\b(captain.*squad|opener.*squad|all-rounder)\\b"
+
+  # International Football
+  - "\\b(premier league|champions league|la liga|serie a|bundesliga|ligue 1)\\b"
+  - "\\b(manchester united|manchester city|liverpool|chelsea|arsenal)\\b"
+  - "\\b(barcelona|real madrid|bayern munich|psg|juventus)\\b"
+  - "\\b(messi|ronaldo|neymar|mbappe|haaland)\\b"
+  - "\\b(world cup|euro 2024|euro 2028|copa america|uefa)\\b"
+  - "\\b(fa cup|carabao cup|europa league|conference league)\\b"
+
+  # Entertainment
+  - "\\b(bollywood|hollywood|tollywood|kollywood)\\b"
+  - "\\b(oscar|grammy|emmy|golden globe|bafta)\\b"
+  - "\\b(netflix|amazon prime|disney|hulu|hbo)\\b"
+  - "\\b(box office|blockbuster|movie release)\\b"
+
+  # Foreign Politics (without Nepal connection)
+  - "\\b(trump|biden|harris|white house|congress us)\\b"
+  - "\\b(modi government|bjp|indian election|lok sabha|rajya sabha)\\b"
+  - "\\b(xi jinping|chinese communist party|ccp|beijing government)\\b"
+  - "\\b(ukraine|russia war|putin|zelensky|kremlin)\\b"
+  - "\\b(israel|gaza|hamas|netanyahu|hezbollah)\\b"
+  - "\\b(taiwan strait|south china sea|north korea|kim jong)\\b"
+  - "\\b(brexit|eu parliament|european union politics)\\b"
+
+  # Other International Sports
+  - "\\b(nba|nfl|mlb|nhl|pga|wimbledon|us open tennis)\\b"
+  - "\\b(formula 1|f1 racing|grand prix|nascar)\\b"
+  - "\\b(olympics 2024|olympics 2028|commonwealth games)\\b"
+
+# Keywords that indicate neighbor impact (India-Nepal, China-Nepal)
+neighbor_keywords:
+  - india nepal
+  - china nepal
+  - indo-nepal
+  - sino-nepal
+  - nepal border
+  - border crossing
+  - raxaul
+  - birgunj border
+  - kakarbhitta
+  - tatopani
+  - tibet nepal
+  - bhutan nepal
+
+# Story type indicators for categorization
+story_type_indicators:
+  political:
+    - election
+    - parliament
+    - cabinet
+    - minister
+    - government
+    - opposition
+    - vote
+    - coalition
+    - party
+
+  disaster:
+    - earthquake
+    - flood
+    - landslide
+    - avalanche
+    - fire
+    - drought
+    - monsoon
+    - cyclone
+    - tornado
+
+  crime:
+    - police
+    - arrest
+    - murder
+    - robbery
+    - theft
+    - assault
+    - court
+    - prison
+    - sentenced
+
+  economic:
+    - economy
+    - inflation
+    - gdp
+    - budget
+    - tax
+    - trade
+    - export
+    - import
+    - investment
+    - stock
+    - nepse
+
+  social:
+    - protest
+    - strike
+    - bandh
+    - demonstration
+    - rally
+    - human rights
+    - discrimination

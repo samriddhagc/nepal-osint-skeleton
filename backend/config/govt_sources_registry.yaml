@@ -1,0 +1,589 @@
+# Government Sources Registry for NARADA
+# Generated: 2026-02-03
+# Total sources: 200+
+
+federal_ministries:
+  # Priority 1 - Critical (poll every 30 mins)
+  - id: opmcm
+    name: Office of the Prime Minister and Council of Ministers
+    name_ne: प्रधानमन्त्री तथा मन्त्रिपरिषद्को कार्यालय
+    base_url: https://www.opmcm.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_en: /en/page/press-release
+      press_release_ne: /page/press-release
+      notice_en: /en/page/notice
+      notice_ne: /page/notice
+      cabinet_decision: /page/cabinet-decision
+    priority: 1
+    poll_interval_mins: 30
+
+  - id: moha
+    name: Ministry of Home Affairs
+    name_ne: गृह मन्त्रालय
+    base_url: https://www.moha.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_en: /en/page/press-release
+      press_release_ne: /page/press-release
+      notice_en: /en/page/notice
+      notice_ne: /page/notice
+    priority: 1
+    poll_interval_mins: 30
+
+  - id: mofa
+    name: Ministry of Foreign Affairs
+    name_ne: परराष्ट्र मन्त्रालय
+    base_url: https://mofa.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_en: /page/press-release
+      notice_en: /page/notice
+    priority: 1
+    poll_interval_mins: 60
+
+  - id: mof
+    name: Ministry of Finance
+    name_ne: अर्थ मन्त्रालय
+    base_url: https://mof.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_en: /en/page/press-release
+      press_release_ne: /page/press-release
+      notice_en: /en/page/notice
+      notice_ne: /page/notice
+      budget_en: /en/page/budget
+    priority: 1
+    poll_interval_mins: 60
+
+  - id: mohp
+    name: Ministry of Health and Population
+    name_ne: स्वास्थ्य तथा जनसंख्या मन्त्रालय
+    base_url: https://mohp.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_ne: /page/press-release
+      notice_ne: /page/notice
+    priority: 1
+    poll_interval_mins: 60
+
+  - id: mod
+    name: Ministry of Defence
+    name_ne: रक्षा मन्त्रालय
+    base_url: https://mod.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_ne: /page/press-release
+      notice_ne: /page/notice
+    priority: 1
+    poll_interval_mins: 60
+
+  # Priority 2 - Important (poll every 2 hours)
+  - id: moe
+    name: Ministry of Education, Science and Technology
+    name_ne: शिक्षा, विज्ञान तथा प्रविधि मन्त्रालय
+    base_url: https://moest.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_ne: /page/press-release
+      notice_ne: /page/notice
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: moald
+    name: Ministry of Agriculture and Livestock Development
+    name_ne: कृषि तथा पशुपन्छी विकास मन्त्रालय
+    base_url: https://moald.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_ne: /page/press-release
+      notice_ne: /page/notice
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: moics
+    name: Ministry of Industry, Commerce and Supplies
+    name_ne: उद्योग, वाणिज्य तथा आपूर्ति मन्त्रालय
+    base_url: https://moics.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_ne: /page/press-release
+      notice_ne: /page/notice
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: moewri
+    name: Ministry of Energy, Water Resources and Irrigation
+    name_ne: ऊर्जा, जलस्रोत तथा सिँचाइ मन्त्रालय
+    base_url: https://moewri.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_ne: /page/press-release
+      notice_ne: /page/notice
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: mocit
+    name: Ministry of Communications and Information Technology
+    name_ne: सञ्चार तथा सूचना प्रविधि मन्त्रालय
+    base_url: https://mocit.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_en: /en/page/press-release
+      press_release_ne: /page/press-release
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: moless
+    name: Ministry of Labour, Employment and Social Security
+    name_ne: श्रम, रोजगार तथा सामाजिक सुरक्षा मन्त्रालय
+    base_url: https://moless.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_ne: /page/press-release
+      notice_ne: /page/notice
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: moljpa
+    name: Ministry of Law, Justice and Parliamentary Affairs
+    name_ne: कानून, न्याय तथा संसदीय मामिला मन्त्रालय
+    base_url: https://moljpa.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_ne: /page/press-release
+      notice_ne: /page/notice
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: mofaga
+    name: Ministry of Federal Affairs and General Administration
+    name_ne: संघीय मामिला तथा सामान्य प्रशासन मन्त्रालय
+    base_url: https://mofaga.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_ne: /page/press-release
+      notice_ne: /page/notice
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: mocta
+    name: Ministry of Culture, Tourism and Civil Aviation
+    name_ne: संस्कृति, पर्यटन तथा नागरिक उड्डयन मन्त्रालय
+    base_url: https://mocta.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_en: /en/page/press-release
+      press_release_ne: /page/press-release
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: mofe
+    name: Ministry of Forests and Environment
+    name_ne: वन तथा वातावरण मन्त्रालय
+    base_url: https://mofe.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_ne: /page/press-release
+      notice_ne: /page/notice
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: mopit
+    name: Ministry of Physical Infrastructure and Transport
+    name_ne: भौतिक पूर्वाधार तथा यातायात मन्त्रालय
+    base_url: https://mopit.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_ne: /page/press-release
+      notice_ne: /page/notice
+    priority: 2
+    poll_interval_mins: 120
+
+  # Priority 3 - Regular (poll every 3 hours)
+  - id: mohud
+    name: Ministry of Urban Development
+    name_ne: शहरी विकास मन्त्रालय
+    base_url: https://mohud.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_ne: /page/press-release
+      notice_ne: /page/notice
+    priority: 3
+    poll_interval_mins: 180
+
+  - id: mowcsc
+    name: Ministry of Women, Children and Senior Citizens
+    name_ne: महिला, बालबालिका तथा ज्येष्ठ नागरिक मन्त्रालय
+    base_url: https://mowcsc.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_ne: /page/press-release
+      notice_ne: /page/notice
+    priority: 3
+    poll_interval_mins: 180
+
+  - id: moys
+    name: Ministry of Youth and Sports
+    name_ne: युवा तथा खेलकुद मन्त्रालय
+    base_url: https://moys.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_ne: /page/press-release
+      notice_ne: /page/notice
+    priority: 3
+    poll_interval_mins: 180
+
+  - id: mowss
+    name: Ministry of Water Supply
+    name_ne: खानेपानी मन्त्रालय
+    base_url: https://mowss.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_ne: /page/press-release
+      notice_ne: /page/notice
+    priority: 3
+    poll_interval_mins: 180
+
+  - id: molcpa
+    name: Ministry of Land Management, Cooperatives and Poverty Alleviation
+    name_ne: भूमि व्यवस्था, सहकारी तथा गरिबी निवारण मन्त्रालय
+    base_url: https://molcpa.gov.np
+    scraper_class: ministry_generic
+    endpoints:
+      press_release_ne: /page/press-release
+      notice_ne: /page/notice
+    priority: 3
+    poll_interval_mins: 180
+
+constitutional_bodies:
+  - id: ecn
+    name: Election Commission Nepal
+    name_ne: निर्वाचन आयोग, नेपाल
+    base_url: https://election.gov.np
+    scraper_class: ecn_scraper
+    priority: 1
+    poll_interval_mins: 30
+
+  - id: ciaa
+    name: Commission for Investigation of Abuse of Authority
+    name_ne: अख्तियार दुरुपयोग अनुसन्धान आयोग
+    base_url: https://ciaa.gov.np
+    scraper_class: constitutional
+    priority: 1
+    poll_interval_mins: 60
+
+  - id: oag
+    name: Office of the Auditor General
+    name_ne: महालेखा परीक्षकको कार्यालय
+    base_url: https://www.oag.gov.np
+    scraper_class: constitutional
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: psc
+    name: Public Service Commission
+    name_ne: लोक सेवा आयोग
+    base_url: https://psc.gov.np
+    scraper_class: constitutional
+    priority: 1
+    poll_interval_mins: 60
+
+  - id: nhrc
+    name: National Human Rights Commission
+    name_ne: राष्ट्रिय मानव अधिकार आयोग
+    base_url: https://www.nhrcnepal.org
+    scraper_class: constitutional
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: nwc
+    name: National Women Commission
+    name_ne: राष्ट्रिय महिला आयोग
+    base_url: https://nwc.gov.np
+    scraper_class: constitutional
+    priority: 2
+    poll_interval_mins: 120
+
+regulatory_bodies:
+  - id: nrb
+    name: Nepal Rastra Bank
+    name_ne: नेपाल राष्ट्र बैंक
+    base_url: https://nrb.org.np
+    scraper_class: nrb_scraper
+    priority: 1
+    poll_interval_mins: 60
+
+  - id: sebon
+    name: Securities Board of Nepal
+    name_ne: नेपाल धितोपत्र बोर्ड
+    base_url: https://sebon.gov.np
+    scraper_class: regulatory
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: nta
+    name: Nepal Telecommunications Authority
+    name_ne: नेपाल दूरसञ्चार प्राधिकरण
+    base_url: https://nta.gov.np
+    scraper_class: regulatory
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: nerc
+    name: Nepal Electricity Regulatory Commission
+    name_ne: विद्युत नियमन आयोग
+    base_url: https://nerc.gov.np
+    scraper_class: regulatory
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: caan
+    name: Civil Aviation Authority of Nepal
+    name_ne: नेपाल नागरिक उड्डयन प्राधिकरण
+    base_url: https://caanepal.gov.np
+    scraper_class: regulatory
+    priority: 2
+    poll_interval_mins: 120
+
+judiciary:
+  - id: supremecourt
+    name: Supreme Court of Nepal
+    name_ne: सर्वोच्च अदालत
+    base_url: https://supremecourt.gov.np
+    scraper_class: judiciary
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: jc
+    name: Judicial Council
+    name_ne: न्याय परिषद्
+    base_url: https://jc.gov.np
+    scraper_class: judiciary
+    priority: 3
+    poll_interval_mins: 180
+
+security_services:
+  - id: nepalpolice
+    name: Nepal Police
+    name_ne: नेपाल प्रहरी
+    base_url: https://nepalpolice.gov.np
+    scraper_class: security
+    priority: 1
+    poll_interval_mins: 30
+
+  - id: cib
+    name: Central Investigation Bureau
+    name_ne: केन्द्रीय अनुसन्धान ब्यूरो
+    base_url: https://cib.nepalpolice.gov.np
+    scraper_class: security
+    priority: 1
+    poll_interval_mins: 60
+
+  - id: apf
+    name: Armed Police Force
+    name_ne: सशस्त्र प्रहरी बल
+    base_url: https://apf.gov.np
+    scraper_class: security
+    priority: 1
+    poll_interval_mins: 60
+
+  - id: nepalarmy
+    name: Nepal Army
+    name_ne: नेपाली सेना
+    base_url: https://nepalarmy.mil.np
+    scraper_class: security
+    priority: 1
+    poll_interval_mins: 60
+
+  - id: nid
+    name: National Investigation Department
+    name_ne: राष्ट्रिय अनुसन्धान विभाग
+    base_url: https://nid.gov.np
+    scraper_class: security
+    priority: 1
+    poll_interval_mins: 60
+
+  - id: immigration
+    name: Department of Immigration
+    name_ne: अध्यागमन विभाग
+    base_url: https://immigration.gov.np
+    scraper_class: security
+    priority: 2
+    poll_interval_mins: 120
+
+disaster_sources:
+  - id: bipad
+    name: BIPAD Portal
+    name_ne: विपद् पोर्टल
+    base_url: https://bipadportal.gov.np
+    scraper_class: bipad_fetcher
+    has_api: true
+    api_url: https://bipadportal.gov.np/api
+    priority: 1
+    poll_interval_mins: 15
+
+  - id: drr
+    name: DRR Portal
+    name_ne: विपद् जोखिम न्यूनीकरण पोर्टल
+    base_url: https://drrportal.gov.np
+    scraper_class: drr_scraper
+    priority: 1
+    poll_interval_mins: 30
+
+  - id: dhm
+    name: Department of Hydrology and Meteorology
+    name_ne: जलमापन तथा मौसम विज्ञान विभाग
+    base_url: https://dhm.gov.np
+    scraper_class: dhm_scraper
+    has_api: true
+    priority: 1
+    poll_interval_mins: 15
+
+parliament:
+  - id: hor
+    name: House of Representatives
+    name_ne: प्रतिनिधि सभा
+    base_url: https://hr.parliament.gov.np
+    scraper_class: parliament_scraper
+    priority: 1
+    poll_interval_mins: 60
+
+  - id: na
+    name: National Assembly
+    name_ne: राष्ट्रिय सभा
+    base_url: https://na.parliament.gov.np
+    scraper_class: parliament_scraper
+    priority: 1
+    poll_interval_mins: 60
+
+provinces:
+  - id: koshi
+    name: Koshi Province
+    name_ne: कोशी प्रदेश
+    base_url: https://koshi.gov.np
+    scraper_class: provincial_scraper
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: madhesh
+    name: Madhesh Province
+    name_ne: मधेश प्रदेश
+    base_url: https://madhesh.gov.np
+    scraper_class: provincial_scraper
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: bagmati
+    name: Bagmati Province
+    name_ne: बागमती प्रदेश
+    base_url: https://bagamati.gov.np
+    scraper_class: provincial_scraper
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: gandaki
+    name: Gandaki Province
+    name_ne: गण्डकी प्रदेश
+    base_url: https://gandaki.gov.np
+    scraper_class: provincial_scraper
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: lumbini
+    name: Lumbini Province
+    name_ne: लुम्बिनी प्रदेश
+    base_url: https://lumbini.gov.np
+    scraper_class: provincial_scraper
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: karnali
+    name: Karnali Province
+    name_ne: कर्णाली प्रदेश
+    base_url: https://karnali.gov.np
+    scraper_class: provincial_scraper
+    priority: 2
+    poll_interval_mins: 120
+
+  - id: sudurpashchim
+    name: Sudurpashchim Province
+    name_ne: सुदूरपश्चिम प्रदेश
+    base_url: https://sudurpashchim.gov.np
+    scraper_class: provincial_scraper
+    priority: 2
+    poll_interval_mins: 120
+
+municipalities:
+  metropolitan:
+    - id: kathmandu
+      name: Kathmandu Metropolitan City
+      name_ne: काठमाडौं महानगरपालिका
+      base_url: https://kathmandu.gov.np
+      scraper_class: municipality_scraper
+      priority: 1
+      poll_interval_mins: 60
+
+    - id: lalitpur
+      name: Lalitpur Metropolitan City
+      name_ne: ललितपुर महानगरपालिका
+      base_url: https://lmc.gov.np
+      scraper_class: municipality_scraper
+      priority: 2
+      poll_interval_mins: 120
+
+    - id: bharatpur
+      name: Bharatpur Metropolitan City
+      name_ne: भरतपुर महानगरपालिका
+      base_url: https://bharatpurmun.gov.np
+      scraper_class: municipality_scraper
+      priority: 2
+      poll_interval_mins: 120
+
+    - id: pokhara
+      name: Pokhara Metropolitan City
+      name_ne: पोखरा महानगरपालिका
+      base_url: https://pokharamun.gov.np
+      scraper_class: municipality_scraper
+      priority: 2
+      poll_interval_mins: 120
+
+    - id: biratnagar
+      name: Biratnagar Metropolitan City
+      name_ne: विराटनगर महानगरपालिका
+      base_url: https://baborairatnagarmun.gov.np
+      scraper_class: municipality_scraper
+      priority: 2
+      poll_interval_mins: 120
+
+    - id: birgunj
+      name: Birgunj Metropolitan City
+      name_ne: वीरगंज महानगरपालिका
+      base_url: https://birgunjmun.gov.np
+      scraper_class: municipality_scraper
+      priority: 2
+      poll_interval_mins: 120
+
+# DAO (District Administration Offices) - All 77 districts
+# Managed by dao_scraper.py with batch processing
+daos:
+  scraper_class: dao_scraper
+  url_pattern: "https://dao{district}.moha.gov.np"
+  total_districts: 77
+  priority_districts:
+    - kathmandu
+    - lalitpur
+    - bhaktapur
+    - kaski
+    - chitwan
+    - morang
+    - jhapa
+    - sunsari
+    - rupandehi
+    - parsa
+    - banke
+    - kailali
+    - dang
+    - dhanusa
+    - makwanpur
+  poll_interval_mins: 120

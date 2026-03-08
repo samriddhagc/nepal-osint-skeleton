@@ -1,4 +1,4 @@
-# Nepal OSINT v5 Backend - Dependencies
+# Nepal OSINT Backend - Dependencies
 
 # Core
 fastapi>=0.109.0
@@ -12,12 +12,11 @@ python-multipart>=0.0.9
 sqlalchemy[asyncio]>=2.0.25
 asyncpg>=0.29.0
 alembic>=1.13.0
-pgvector>=0.2.0
 
 # Redis
 redis>=5.0.0
 
-# RSS Ingestion
+# RSS Ingestion & HTTP
 aiohttp>=3.9.0
 httpx>=0.26.0
 requests>=2.31.0
@@ -35,40 +34,12 @@ python-dateutil>=2.8.0
 # Scheduler
 apscheduler>=3.10.0
 
-# ML / Embeddings
-torch>=2.0.0
-transformers>=4.35.0
-sentence-transformers>=2.2.0
-
 # NLP / Text Processing
 indic-transliteration>=2.3.0  # Nepali/Devanagari transliteration
-
-# Anthropic API (for Haiku analysis)
-anthropic>=0.18.0
-
-# Numeric computing
-numpy>=1.24.0
-scipy>=1.11.0
 
 # Auth
 bcrypt>=4.0.0
 PyJWT>=2.8.0
 
-# PostGIS / Geographic
-geoalchemy2>=0.14.0
+# Geographic
 shapely>=2.0.0
-
-# Google Earth Engine
-earthengine-api>=0.1.380
-google-auth>=2.29.0
-
-# Network Analysis (Entity Intelligence)
-networkx>=3.0
-python-louvain>=0.16  # Community detection
-
-# Report Generation
-weasyprint>=60.0  # PDF generation
-fpdf2>=2.7.0
-
-# Web Search (Analyst Agent verification)
-duckduckgo-search>=7.0.0
