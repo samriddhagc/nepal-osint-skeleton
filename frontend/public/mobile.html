@@ -389,7 +389,12 @@ function renderPPills(){
 
 function renderP(){
   renderPPills();
-  const fil=pCat==='all'?allP:allP.filter(p=>p.category===pCat);
+  const statusOrder={fulfilled:0,in_progress:1,stalled:2,not_started:3};
+  const fil=(pCat==='all'?allP:allP.filter(p=>p.category===pCat)).slice().sort((a,b)=>{
+    const sa=(a.status||'not_started').toLowerCase().replace(/ /g,'_');
+    const sb=(b.status||'not_started').toLowerCase().replace(/ /g,'_');
+    return (statusOrder[sa]??4)-(statusOrder[sb]??4);
+  });
   pPages=Math.max(1,Math.ceil(fil.length/PP));
   if(pPage>pPages)pPage=pPages;
   const pg=fil.slice((pPage-1)*PP,pPage*PP);
